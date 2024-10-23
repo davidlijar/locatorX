@@ -1,0 +1,161 @@
+{
+   "version":1,
+   "id":"positioning-test_room",
+   "estimationModeLocation":"SL_RTL_LOC_ESTIMATION_MODE_THREE_DIM_HIGH_ACCURACY",
+   "validationModeLocation":"SL_RTL_LOC_MEASUREMENT_VALIDATION_FULL",
+   "estimationIntervalSec":0.02,
+   "locationFiltering":true,
+   "locationFilteringWeight":0.1,
+   "numberOfSequenceIds":6,
+   "maximumSequenceIdDiffs":20,
+   "locators":[
+      {
+         "id":"ble-pd-4C5BB3CA7930",
+         "config":{
+            "version":1,
+            "aoxMode":"SL_RTL_AOD_MODE_REAL_TIME_FAST_RESPONSE",
+            "antennaMode":"SL_RTL_AOX_ARRAY_TYPE_4x4_URA",
+	    "antennaArray": null,
+            "angleFiltering":true,
+            "angleFilteringWeight":0.6,
+            "angleCorrectionTimeout":5,
+            "angleCorrectionDelay":1,
+            "cteMode":"SILABS",
+	    "periodSamples": 64,
+            "cteSamplingInterval":1,
+            "cteLength":160,
+            "slotDuration":1,
+            "reportMode":"ANGLE",
+            "allowList":[
+            ],
+            "azimuthMask":[
+
+            ],
+            "elevationMask":[
+
+            ]
+         },
+         "coordinate":{
+            "x":0.0,
+            "y":0.0,
+            "z":3.0
+         },
+         "orientation":{
+            "x": 0,
+            "y": 180,
+            "z": 90
+         }
+      },
+      {
+         "id":"ble-pd-4C5BB3CA752F",
+         "config":{
+            "version":1,
+            "aoxMode":"SL_RTL_AOD_MODE_REAL_TIME_FAST_RESPONSE",
+            "antennaMode":"SL_RTL_AOX_ARRAY_TYPE_4x4_URA",
+	    "antennaArray": null,
+            "angleFiltering":true,
+            "angleFilteringWeight":0.6,
+            "angleCorrectionTimeout":5,
+            "angleCorrectionDelay":1,
+            "cteMode":"SILABS",
+	    "periodSamples": 64,
+            "cteSamplingInterval":1,
+            "cteLength":160,
+            "slotDuration":1,
+            "reportMode":"ANGLE",
+            "allowList":[
+            ],
+            "azimuthMask":[
+
+            ],
+            "elevationMask":[
+
+            ]
+         },
+         "coordinate":{
+            "x":2.0,
+            "y":0.0,
+            "z":3.0
+         },
+         "orientation":{
+            "x": 0,
+            "y": 180,
+            "z": 90
+         }
+      },
+      {
+         "id":"ble-pd-4C5BB3CA7931",
+         "config":{
+            "version":1,
+            "aoxMode":"SL_RTL_AOD_MODE_REAL_TIME_FAST_RESPONSE",
+            "antennaMode":"SL_RTL_AOX_ARRAY_TYPE_4x4_URA",
+	    "antennaArray": null,
+            "angleFiltering":true,
+            "angleFilteringWeight":0.6,
+            "angleCorrectionTimeout":5,
+            "angleCorrectionDelay":1,
+            "cteMode":"SILABS",
+	    "periodSamples": 64,
+            "cteSamplingInterval":1,
+            "cteLength":160,
+            "slotDuration":1,
+            "reportMode":"ANGLE",
+            "allowList":[
+            ],
+            "azimuthMask":[
+
+            ],
+            "elevationMask":[
+
+            ]
+         },
+         "coordinate":{
+            "x":0.0,
+            "y":-2.0,
+            "z":3.0
+         },
+         "orientation":{
+            "x": 0,
+            "y": 180,
+            "z": 90
+         }
+      },
+      {
+         "id":"ble-pd-4C5BB3CA791D",
+         "config":{
+            "version":1,
+            "aoxMode":"SL_RTL_AOD_MODE_REAL_TIME_FAST_RESPONSE",
+            "antennaMode":"SL_RTL_AOX_ARRAY_TYPE_4x4_URA",
+	    "antennaArray": null,
+            "angleFiltering":true,
+            "angleFilteringWeight":0.6,
+            "angleCorrectionTimeout":5,
+            "angleCorrectionDelay":1,
+            "cteMode":"SILABS",
+	    "periodSamples": 64,
+            "cteSamplingInterval":1,
+            "cteLength":160,
+            "slotDuration":1,
+            "reportMode":"ANGLE",
+            "allowList":[
+            ],
+            "azimuthMask":[
+
+            ],
+            "elevationMask":[
+
+            ]
+         },
+         "coordinate":{
+            "x":2.0,
+            "y":-2.0,
+            "z":3.0
+         },
+         "orientation":{
+            "x": 0,
+            "y": 180,
+            "z": 90
+         }
+      }
+   ]
+}

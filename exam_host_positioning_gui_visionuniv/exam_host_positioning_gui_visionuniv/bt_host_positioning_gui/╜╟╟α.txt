@@ -1,0 +1,9 @@
+anaconda를 설치후 아나콘다 실행
+
+처음 가상 환경이 없을 시 
+conda create -n aod pyton=3.7
+
+conda activate aod
+
+cd C:\Users\User\LocationX\exam_host_positioning_gui_visionuniv\bt_host_positioning_gui
+python app.py -m 192.168.1.4 -c ../config/positioning_config_4area.json

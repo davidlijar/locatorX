@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="Controller_Tester.Standard_Simulation.LogWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Controller_Tester.Standard_Simulation"
+             mc:Ignorable="d" 
+             >
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+
+
+        </Grid.ColumnDefinitions>
+
+        <TextBox Margin="5" TextWrapping="Wrap" Text="{Binding Log_Send_Message, UpdateSourceTrigger=PropertyChanged}" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Auto"  ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Row="0" Grid.Column="1" Visibility="Hidden"/>
+        <DockPanel Grid.Row="2" Grid.ColumnSpan="2" Grid.RowSpan="1">
+            <ScrollViewer x:Name="Log_Receive_Window"  CanContentScroll="True" HorizontalScrollBarVisibility="Auto"  VerticalScrollBarVisibility="Auto" Margin="0" >
+                <ListBox  ItemsSource="{Binding LogList}"  Height="auto" VirtualizingStackPanel.IsVirtualizing="True"  >
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsHighlighted}" Value="1">
+                                    <Setter Property="Foreground" Value="Red"></Setter>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsHighlighted}" Value="2">
+                                    <Setter Property="Foreground" Value="Gray"></Setter>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsHighlighted}" Value="3">
+                                    <Setter Property="Foreground" Value="Blue"></Setter>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Log}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+
+                </ListBox>
+            </ScrollViewer>
+
+        </DockPanel>
+        <Button Content="Log Delete" Margin="5,3,5,5" Grid.Column="0" Command="{Binding Log_Del_Button}" CommandParameter="{Binding RelativeSource={RelativeSource Self}}"/>
+    </Grid>
+</UserControl>
